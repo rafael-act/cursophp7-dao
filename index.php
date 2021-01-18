@@ -6,8 +6,24 @@
 
     echo json_encode($usuarios);*/
 
-    $root = new Usuario();
+    //carrega um usuario
+    /*$root = new Usuario();
     $root->loadById(3);
 
-    echo $root;
+    echo $root;*/
+
+    //carrega uma lista de usuarios
+    /*$lista = Usuario::getList();
+
+    echo json_encode($lista);*/
+
+    //carrega uma lisa de usuarios buscando pelo login
+  /*  $search = Usuario::search("jo");
+
+    echo json_encode($search);*/
+
+    //carrega um login utilizando usuario e senha
+    $usuario =new Usuario();
+    echo json_encode($usuario->login("jose","1234"));
+
     ?>
