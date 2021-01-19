@@ -33,9 +33,15 @@ criando um novo usuario insert
 
     echo $aluno;
     ?>*/
-
+/*alterar um usuario
     $usuario=new Usuario();
     $usuario->loadById(5);
 
     $usuario->update("professor","!@#$%&*()"); 
+    echo $usuario;*/
+
+    $usuario = new Usuario();
+    $usuario->loadById(5);
+
+    $usuario->delete();
     echo $usuario;
